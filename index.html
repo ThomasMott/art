@@ -10,10 +10,12 @@
 			name="description"
 			content="Welcome to my art website, Here are a few of my favourite projects that I have worked on."
 		/>
+		<link href="./style.css" rel="stylesheet" />
 		<link
 			href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css"
 			rel="stylesheet"
 		/>
+
 		<link rel="icon" href="../static/images/favicon.ico" />
 	</head>
 	<body>
@@ -22,8 +24,7 @@
 				class="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl p-4"
 			>
 				<a href="/" class="flex items-center">
-					<span
-						class="font-mono self-center text-xl font-semibold whitespace-nowrap dark:text-white"
+					<span class="logo self-center text-xl font-semibold whitespace-nowrap"
 						>Tmo.</span
 					>
 				</a>
@@ -34,7 +35,7 @@
 					<div class="flex mt-4 space-x-6 sm:justify-center sm:mt-0">
 						<a
 							href="https://www.instagram.com/xtmto/"
-							class="text-gray-500 hover:text-gray-900 dark:hover:text-white"
+							class="text-gray-500 hover:text-gray-900"
 						>
 							<svg
 								class="w-5 h-5"
@@ -55,15 +56,102 @@
 			</div>
 		</nav>
 		<main class="max-w-screen-lg mx-auto py-10 px-6">
-			<h1 class="font-mono text-6xl font-semibold">Tmo.</h1>
+			<h1 class="logo text-6xl font-semibold">Tmo.</h1>
 			<h2 class="text-2xl mb-10 text-gray-700">
 				Illustrator &amp; artist based in Bristol.
 			</h2>
-			<section
-				class="grid gap-8 grid-flow-dense grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3"
-			>
-				<div class="h-full w-full">
-					<img src="./static/images/test.svg" alt="art" />
+			<section class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-10">
+				<div class="grid gap-4">
+					<div>
+						<img
+							class="object-cover h-full max-w-full rounded-lg"
+							src="./static/images/art/skull.jpg"
+							alt=""
+						/>
+					</div>
+					<div>
+						<img
+							class="object-cover h-full max-w-full rounded-lg"
+							src="./static/images/art/banana.jpg"
+							alt=""
+						/>
+					</div>
+					<div>
+						<img
+							class="object-cover h-full max-w-full rounded-lg"
+							src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-4.jpg"
+							alt=""
+						/>
+					</div>
+				</div>
+				<div class="grid gap-4">
+					<div>
+						<img
+							class="object-cover h-full max-w-full rounded-lg"
+							src="./static/images/art/silly.jpg"
+							alt=""
+						/>
+					</div>
+					<div>
+						<img
+							class="object-cover h-full max-w-full rounded-lg"
+							src="./static/images/art/toad.jpg"
+							alt=""
+						/>
+					</div>
+					<div>
+						<img
+							class="object-cover h-full max-w-full rounded-lg"
+							src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-6.jpg"
+							alt=""
+						/>
+					</div>
+				</div>
+				<div class="grid gap-4">
+					<div>
+						<img
+							class="object-cover h-full max-w-full rounded-lg"
+							src="./static/images/art/music.jpg"
+							alt=""
+						/>
+					</div>
+					<div>
+						<img
+							class="object-cover h-full max-w-full rounded-lg"
+							src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-7.jpg"
+							alt=""
+						/>
+					</div>
+					<div>
+						<img
+							class="object-cover h-full max-w-full rounded-lg"
+							src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-8.jpg"
+							alt=""
+						/>
+					</div>
+				</div>
+				<div class="grid gap-4">
+					<div>
+						<img
+							class="object-cover h-full max-w-full rounded-lg"
+							src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-9.jpg"
+							alt=""
+						/>
+					</div>
+					<div>
+						<img
+							class="object-cover h-full max-w-full rounded-lg"
+							src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-10.jpg"
+							alt=""
+						/>
+					</div>
+					<div>
+						<img
+							class="object-cover h-full max-w-full rounded-lg"
+							src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-11.jpg"
+							alt=""
+						/>
+					</div>
 				</div>
 			</section>
 		</main>
@@ -71,7 +159,7 @@
 			<div class="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
 				<div class="md:flex md:justify-between">
 					<div class="mb-6 md:mb-0">
-						<a href="./" class="font-mono font-semibold"> Tmo.</a>
+						<a href="./" class="logo font-semibold"> Tmo.</a>
 					</div>
 					<div class="flex gap-8">
 						<a class="hover:underline" href="/art/">about</a>
@@ -88,7 +176,7 @@
 					<div class="flex mt-4 space-x-6 sm:justify-center sm:mt-0">
 						<a
 							href="https://www.instagram.com/xtmto/"
-							class="text-gray-500 hover:text-gray-900 dark:hover:text-white"
+							class="text-gray-500 hover:text-gray-900"
 						>
 							<svg
 								class="w-5 h-5"
