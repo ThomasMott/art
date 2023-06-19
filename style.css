@@ -3,3 +3,7 @@
 .logo {
 	font-family: 'Geologica', sans-serif;
 }
+
+.three:hover span {
+	height: 100%;
+}
